@@ -1,9 +1,23 @@
 #!/usr/bin/python3
 import random
 
-print("How many dice?")
-dice = int(input())
-print("How many faces per die?")
-faces = int(input())
-for i in range(dice):
-  print(f"Die #{i}: {random.randrange(1, faces)}")
+min = 1
+max = 100
+num = random.randrange(min, max)
+
+print(f"I'm thinking of a number between {min} and {max}. Can you guess it?")
+
+guesses = 0
+guess = None
+
+while True:
+  guess = int(input())
+  guesses += 1
+  
+  if guess > num:
+    print("Lower")
+  elif guess < num:
+    print("Higher")
+  else:
+    print(f"That's it! It only took you {guesses} guesses.")
+    break
