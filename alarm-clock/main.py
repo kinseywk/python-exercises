@@ -3,8 +3,14 @@
 
 if __name__ == "__main__":
   import time
+
   print("How many seconds to wait?")
-  wait = int(input())
+  while True:
+    try:
+      wait = int(input())
+      break
+    except ValueError:
+      print("Input must be an integer")
+
   time.sleep(wait)
   print("Time's up!")
-  
