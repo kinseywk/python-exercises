@@ -4,9 +4,9 @@
 if __name__ == "__main__":
   import random
 
-  min = 1
-  max = 100
-  num = random.randrange(min, max)
+  MIN = 1
+  MAX = 100
+  num = random.randrange(MIN, MAX)
 
   print(f"I'm thinking of a number between {min} and {max}. Can you guess it?")
 

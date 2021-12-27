@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
   FILE = None
 
-  def signalHandler(sig, frame):
+  def signalHandler(sig):
     if file is not None:
       keystroke = ""
       if sig == signal.SIGINT:
