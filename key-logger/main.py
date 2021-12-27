@@ -26,4 +26,8 @@ if __name__ == "__main__":
   with open("keylog.txt", "a") as file:
     #For each keystroke, append to file
     while True:
-      file.write(f"{input()}\n")
+      try:
+        file.write(f"{input()}\n")
+      except EOFError:
+        file.write("^D")
+        break
