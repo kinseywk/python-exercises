@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-import random
 
-print("How many dice?")
-dice = int(input())
-print("How many faces per die?")
-faces = int(input())
-for i in range(dice):
-  print(f"Die #{i}: {random.randrange(1, faces)}")
+print("Inroduzca una URL, por favor")
+url = input()
+
+print(f"Aquí está tu URL: http://fake-url-shortening-service.com/{hash(url)}")
