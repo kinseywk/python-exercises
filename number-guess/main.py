@@ -8,13 +8,19 @@ if __name__ == "__main__":
   MAX = 100
   num = random.randrange(MIN, MAX)
 
-  print(f"I'm thinking of a number between {min} and {max}. Can you guess it?")
+  print(f"I'm thinking of a number between {MIN} and {MAX}. Can you guess it?")
 
   guesses = 0
   guess = None
 
   while True:
-    guess = int(input())
+    while True:
+      try:
+        guess = int(input())
+        break
+      except ValueError:
+        print("Input must be an integer")
+
     guesses += 1
 
     if guess > num:

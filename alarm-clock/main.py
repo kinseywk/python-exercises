@@ -14,7 +14,3 @@ if __name__ == "__main__":
 
   time.sleep(wait)
   print("Time's up!")
-<<<<<<< HEAD
-=======
-  
->>>>>>> 248c513089097aefe964b760a5c19e4a6d1e6603

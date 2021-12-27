@@ -11,11 +11,16 @@ if __name__ == "__main__":
       dice = int(input())
       break
     except ValueError:
-      print
-    print("How many faces per die?")
+      print("Input must be an integer")
+
+  print("How many faces per die?")
 
   while True:
-    faces = int(input())
+    try:
+      faces = int(input())
+      break
+    except ValueError:
+      print("Input must be an integer")
 
   for i in range(dice):
-    print(f"Die #{i}: {random.randrange(1, faces)}")
+    print(f"Die #{i + 1}: {random.randrange(0, faces) + 1}")
