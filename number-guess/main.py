@@ -24,3 +24,4 @@ if __name__ == "__main__":
     else:
       print(f"That's it! It only took you {guesses} guesses.")
       break
+    

@@ -6,3 +6,4 @@ if __name__ == "__main__":
   url = input()
 
   print(f"Aquí está tu URL: http://fake-url-shortening-service.com/{hash(url)}")
+  

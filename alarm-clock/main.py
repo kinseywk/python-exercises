@@ -7,3 +7,4 @@ if __name__ == "__main__":
   wait = int(input())
   time.sleep(wait)
   print("Time's up!")
+  
