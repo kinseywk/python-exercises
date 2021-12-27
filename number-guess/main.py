@@ -1,23 +1,26 @@
 #!/usr/bin/python3
-import random
+"""Number guess application"""
 
-min = 1
-max = 100
-num = random.randrange(min, max)
+if __name__ == "__main__":
+  import random
 
-print(f"I'm thinking of a number between {min} and {max}. Can you guess it?")
+  min = 1
+  max = 100
+  num = random.randrange(min, max)
 
-guesses = 0
-guess = None
+  print(f"I'm thinking of a number between {min} and {max}. Can you guess it?")
 
-while True:
-  guess = int(input())
-  guesses += 1
-  
-  if guess > num:
-    print("Lower")
-  elif guess < num:
-    print("Higher")
-  else:
-    print(f"That's it! It only took you {guesses} guesses.")
-    break
+  guesses = 0
+  guess = None
+
+  while True:
+    guess = int(input())
+    guesses += 1
+    
+    if guess > num:
+      print("Lower")
+    elif guess < num:
+      print("Higher")
+    else:
+      print(f"That's it! It only took you {guesses} guesses.")
+      break
