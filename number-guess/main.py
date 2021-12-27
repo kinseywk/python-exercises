@@ -16,7 +16,7 @@ if __name__ == "__main__":
   while True:
     guess = int(input())
     guesses += 1
-    
+
     if guess > num:
       print("Lower")
     elif guess < num:
