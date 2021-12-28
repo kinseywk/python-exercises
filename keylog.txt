@@ -1,4 +1,0 @@
-eenie
-meenie
-miney
-^C^D
